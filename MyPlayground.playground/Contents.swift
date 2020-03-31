@@ -80,3 +80,8 @@ func sumOrDifference(a: Int, b: Int, sum: Bool) {
 }
 sumOrDifference(a: 5, b: 3, sum: false)
 
+func areaOfTriangle(base: Int, height: Int) -> Double {
+    return Double(base * height) * 0.5
+}
+
+print(areaOfTriangle(base: 10, height: 7))
