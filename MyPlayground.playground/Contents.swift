@@ -284,3 +284,48 @@ func search(message: String, word: String) -> Bool {
 print(search(message: str, word: "Sam"))
 print(search(message: str, word: "e p"))
 print(search(message: str, word: "two"))
+
+//func remove(input: String, first: Int, last: Int) -> String {
+//    // we require a variable to manipulate strings
+//    var newString = input
+//    // modify newString and return the result
+//    if (first + last >= input.count) {
+//        return ""
+//    } else {
+//        for i in 0..<first {
+//            newString.remove(at: )
+//        }
+//
+//        newString = String(newString.reversed())
+//        for i in 0..<last {
+//            newString.remove(at: i)
+//        }
+//        newString = String(newString.reversed())
+//        return newString
+//    }
+//}
+
+func printElements(array: [Int]) {
+    for element in array {
+        print(element)
+    }
+}
+
+printElements(array: [1,2,3,4,5,6,7,8,9])
+
+func removeElement(array: [Int], n: Int) -> [Int] {
+    var newArray = array
+    if n > array.count {
+        print("n is greater than array size")
+    } else {
+    for i in 0..<n {
+        print(i)
+        print(newArray[i])
+        newArray.remove(at: i)
+    }
+    }
+    return newArray
+}
+
+let arr = removeElement(array: [10,20,30,40,50,60,70,80,90], n: 3)
+print(arr)
