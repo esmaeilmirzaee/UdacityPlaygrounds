@@ -31,3 +31,30 @@ let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 for c in lorem {
     print(c)
 }
+
+
+var dice_one = 2
+var dice_two = 2
+
+while (!(dice_one == 1 && dice_two == 1)) {
+    dice_one = Int(arc4random() % 6) + 1
+    dice_two = Int(arc4random() % 6) + 1
+    print(dice_one)
+    print(dice_two)
+}
+
+for num in 1...1000 {
+    if (num % 2 == 0) {
+        print(num)
+    }
+}
+
+
+while (true) {
+    let coin_one = Int(arc4random() % 2) + 1
+    let coin_two = Int(arc4random() % 2) + 1
+    print("\(coin_one), \(coin_two)")
+    if (coin_one == 1 && coin_two == 1) {
+        break
+    }
+}
