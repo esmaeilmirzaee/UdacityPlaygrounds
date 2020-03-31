@@ -132,3 +132,20 @@ struct Beaker {
 
 let beaker = Beaker(volumeMillimeters: 20.00)
 print(Beaker.madeIn)
+
+struct Product {
+    let name: String
+    var price: Double
+    
+    var formattedPrice: String {
+        return "$\(price)"
+    }
+    
+    mutating func discount() {
+        price *= 0.1
+    }
+}
+
+var product = Product(name: "Ice Cream", price: 10)
+product.discount()
+print("\(product.name): \(product.formattedPrice)")
