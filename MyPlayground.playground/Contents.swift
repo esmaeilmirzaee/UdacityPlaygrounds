@@ -58,3 +58,15 @@ while (true) {
         break
     }
 }
+
+func loveIt(name: String) {
+    print("J'adore \(name)")
+}
+
+loveIt(name: "Swift")
+
+func areaOfRectangle(length: Int, width: Int) {
+    print("\(length) * \(width)")
+}
+
+areaOfRectangle(length: 10, width: 5)
