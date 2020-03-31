@@ -264,3 +264,23 @@ func getArtistGenre(song: Song) -> String {
 }
 
 print(getArtistGenre(song: walkTheLine))
+
+let str = "Converting strings to all-lowercase or all-uppercase is great when you want user input to be case-insensitive. And reversing a string is useful if you want to see if two strings are palindromes."
+
+print(str.first)
+print(str.last)
+print(str.hasSuffix("con"))
+
+func checkLength(message: String) -> Bool {
+    return (message.count > 10 && message.count < 10000) ? true : false
+}
+
+print(checkLength(message: str))
+
+func search(message: String, word: String) -> Bool {
+    return (message.lowercased().contains(word.lowercased())) ? true : false
+}
+
+print(search(message: str, word: "Sam"))
+print(search(message: str, word: "e p"))
+print(search(message: str, word: "two"))
