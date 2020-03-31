@@ -185,3 +185,13 @@ print(AmericanLeagueWest.angles)
 print(AmericanLeagueWest.angles.rawValue)
 print(DrinkSize.small.rawValue)
 
+enum Finger: Int {
+    case thumb = 1
+    case index = 2
+    case middle = 3
+    case ring = 4
+    case pinky = 5
+}
+
+print(Finger.pinky)
+print(Finger.pinky.rawValue)
