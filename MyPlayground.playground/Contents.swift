@@ -70,3 +70,13 @@ func areaOfRectangle(length: Int, width: Int) {
 }
 
 areaOfRectangle(length: 10, width: 5)
+
+func sumOrDifference(a: Int, b: Int, sum: Bool) {
+    if sum {
+        print(a + b)
+    } else {
+        print(a - b)
+    }
+}
+sumOrDifference(a: 5, b: 3, sum: false)
+
