@@ -166,3 +166,22 @@ enum Season {
 }
 
 print(Season.fall)
+
+enum AmericanLeagueWest: String {
+    case athletics = "Oakland"
+    case astros = "Huston"
+    case angles = "Los Angles"
+    case mariners = "Seattle"
+    case rangers = "Arlington"
+}
+
+enum DrinkSize: Int {
+    case small = 12
+    case medium = 16
+    case large = 20
+}
+
+print(AmericanLeagueWest.angles)
+print(AmericanLeagueWest.angles.rawValue)
+print(DrinkSize.small.rawValue)
+
