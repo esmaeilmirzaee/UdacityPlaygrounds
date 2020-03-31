@@ -92,3 +92,10 @@ func endOfYearBonus(basePay: Double, bonus: Double, percentBonus: Double = 0.10)
 
 print(endOfYearBonus(basePay: 10000, bonus: 2000))
 print(endOfYearBonus(basePay: 10000, bonus: 2000, percentBonus: 0.15))
+
+struct Author {
+    let firstName: String
+    let lastName: String
+    var living: Bool
+}
+
