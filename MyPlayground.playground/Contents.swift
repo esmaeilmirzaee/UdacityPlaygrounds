@@ -218,9 +218,42 @@ struct Song {
 }
 
 var johnny = Artist(name: "Johnny Cash", primaryGenre: Genre.country)
-var walkTheLine = Song(title: "I walk the line", released: 1956, artist: nil)
+var walkTheLine = Song(title: "I walk the line", released: 1956, artist: johnny)
 if let artist = walkTheLine.artist {
     walkTheLine.artist
+} else {
+    
 }
-print(artist)
+//print(artist)
 
+struct Tail {
+    var length: String
+    
+    init(length: Int) {
+        self.length = "\(length)"
+    }
+}
+
+struct Animal {
+    var name: String
+    var species: String = "home sapiens"
+    var tail: Tail?
+    
+    init(name: String, species: String, tailLength: Int?) {
+        self.name = name
+        self.species = species
+        if let tailLength = tailLength {
+            self.tail = Tail(length: tailLength)
+        } else {
+            self.tail = nil
+        }
+    }
+}
+
+var animal = Animal(name: "Lenny", species: "lemur", tailLength: 12)
+
+if let tailLength = animal.tail?.length {
+    print("\(tailLength)")
+} else {
+    print("without tail")
+}
