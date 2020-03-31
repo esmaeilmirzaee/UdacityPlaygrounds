@@ -99,3 +99,10 @@ struct Author {
     var living: Bool
 }
 
+struct Movie {
+    let name: String
+    let year: Int
+}
+
+let theInformer = Movie(name: "The Informer", year: 2019)
+print(theInformer)
