@@ -149,3 +149,11 @@ struct Product {
 var product = Product(name: "Ice Cream", price: 10)
 product.discount()
 print("\(product.name): \(product.formattedPrice)")
+
+struct Team {
+    var name: String
+    var stadium: String
+}
+
+let braves = Team(name: "AS", stadium: "AS")
+//braves.name = "BS"
