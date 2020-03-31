@@ -85,3 +85,10 @@ func areaOfTriangle(base: Int, height: Int) -> Double {
 }
 
 print(areaOfTriangle(base: 10, height: 7))
+
+func endOfYearBonus(basePay: Double, bonus: Double, percentBonus: Double = 0.10) -> Double {
+    return basePay + bonus * (basePay * percentBonus)
+}
+
+print(endOfYearBonus(basePay: 10000, bonus: 2000))
+print(endOfYearBonus(basePay: 10000, bonus: 2000, percentBonus: 0.15))
