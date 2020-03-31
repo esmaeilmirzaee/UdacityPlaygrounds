@@ -257,3 +257,10 @@ if let tailLength = animal.tail?.length {
 } else {
     print("without tail")
 }
+
+func getArtistGenre(song: Song) -> String {
+    let str = song.artist?.primaryGenre?.rawValue ?? " "
+    return String(str)
+}
+
+print(getArtistGenre(song: walkTheLine))
