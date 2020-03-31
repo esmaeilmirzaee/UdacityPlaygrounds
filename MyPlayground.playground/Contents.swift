@@ -195,3 +195,32 @@ enum Finger: Int {
 
 print(Finger.pinky)
 print(Finger.pinky.rawValue)
+
+var z: Int?
+var s: String
+s = "1"
+z = Int(s)
+print(z)
+
+enum Genre: String {
+    case country, blues, folk
+}
+
+struct Artist {
+    let name: String
+    var primaryGenre: Genre?
+}
+
+struct Song {
+    let title: String
+    let released: Int
+    let artist: Artist?
+}
+
+var johnny = Artist(name: "Johnny Cash", primaryGenre: Genre.country)
+var walkTheLine = Song(title: "I walk the line", released: 1956, artist: nil)
+if let artist = walkTheLine.artist {
+    walkTheLine.artist
+}
+print(artist)
+
