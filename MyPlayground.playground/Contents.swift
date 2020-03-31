@@ -106,3 +106,29 @@ struct Movie {
 
 let theInformer = Movie(name: "The Informer", year: 2019)
 print(theInformer)
+
+struct GeoLocation {
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
+}
+
+let udacityGeoLocation = GeoLocation(latitude: 37.400073, longitude: -122.108400)
+print(udacityGeoLocation)
+//udacityGeoLocation.latitude = 0.0
+//print(udacityGeoLocation)
+
+struct Beaker {
+    let volumeMillimeters: Double
+    static var madeIn = "Proudly in Canada"
+    
+    var volumeOunces: Double {
+        return volumeMillimeters * 0.33814
+    }
+    
+    func canContainContents(otherBeaker: Beaker) -> Bool {
+        return volumeMillimeters >= otherBeaker.volumeMillimeters
+    }
+}
+
+let beaker = Beaker(volumeMillimeters: 20.00)
+print(Beaker.madeIn)
