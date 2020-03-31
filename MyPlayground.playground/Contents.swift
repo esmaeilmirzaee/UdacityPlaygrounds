@@ -157,3 +157,12 @@ struct Team {
 
 let braves = Team(name: "AS", stadium: "AS")
 //braves.name = "BS"
+
+enum Season {
+    case fall
+    case winter
+    case spring
+    case summer
+}
+
+print(Season.fall)
